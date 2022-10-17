@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form>
+        <label for="fname">Név:</label>
+        <input type="text" id="nev" onclick="kiemel();" onblur="alaphelyzet();" value=""><br>
+    </form>
+
+    <form>
+        <label>Neme:</label>
+        <input type="radio" id="nem1" name="nem" checked>
+        <label for="html">Férfi</label>
+        <input type="radio" id="nem2" name="nem">
+        <label for="css">Nő</label><br>
+    </form> 
+
+    <label for="cars">Ajándék:</label>
+    <select id="cars" name="cars">
+        <option value="gyuru">Gyűrű</option>
+        <option value="medal" selected>Medál</option>
+        <option value="nyaklanc">Nyaklánc</option>
+        <option value="ora">Óra</option>
+    </select>
+    
+    <form>
+        <label>Extra:</label>
+        <input type="checkbox" id="doboz" name="doboz" value="doboz" checked>
+        <label for="vehicle1"> Díszdoboz</label>
+        <input type="checkbox" id="bizt" name="bizt" value="bizt">
+        <label for="vehicle2"> Biztosítás</label><br>
+      </form>
+    
+    <input type="submit" value="Elküld">
+</body>
+</html>
